@@ -1,11 +1,11 @@
-# Calculadora Financeira - SmartBerry  
+# Calculadora Financeira - LEFHEL
 
-Este repositório contém a **calculadora financeira interativa** do projeto **SmartBerry**, que permite comparar os custos de cultivo com e sem o uso do sensor de umidade do solo, calculando o faturamento, lucro e quantidade de sensores aproximado
+Este repositório contém a **calculadora financeira interativa** do projeto **LEFHEL**, Descubra quanto da sua produção pode ser preservado com o monitoramento eficaz de temperatura e umidade da Lofhel.
+Insira seus dados e veja o impacto da solução na redução de perdas e na qualidade dos seus vinhos.
 
 ## 🎯 Funcionalidades  
-- Simulação de economia com o uso do sensor  
-- Estimativa da quantidade recomendada de sensores  
-- Comparação de gastos hídricos e produtivos  
+- Simulação de economia em perdas 
+
 
 ## 🚀 Tecnologias  
 

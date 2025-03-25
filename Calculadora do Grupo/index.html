@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
+
 <body>
     <img src="lofhel logo 1.png" alt="logo lofhel" width="200px" height="200px">
-    <h2>Calculadora Financeira Lofhel</h2> 
+    <h2>Calculadora Financeira Lofhel</h2>
     <h4>Descubra quanto da sua produção pode ser preservado com o monitoramento eficaz de temperatura e umidade da
         Lofhel. <br>
         Insira seus dados e veja o impacto da solução na redução de perdas e na qualidade dos seus vinhos.
-    </h4>  <br> 
+    </h4> <br>
 
     Informe seu nome: <input id="dadoNome"><br> <br>
-    Total de Garrafas Produzidas de Vinho no mês:  <input id="iptGarrafas"> <br> 
-    Preço Médio de Cada Garrafa de Vinho em R$:<input id="iptPreco">  <br> <br> <!--Valores inseridos pelo usuário-->
-    
+    Total de Garrafas Produzidas de Vinho no mês: <input id="iptGarrafas"> <br>
+    Preço Médio de Cada Garrafa de Vinho em R$:<input id="iptPreco"> <br> <br> <!--Valores inseridos pelo usuário-->
+
     <h4>Descubra agora quantas perdas sua vinícola pode evitar, clique em simular!</h4>
-    <button onclick="mostrar()">Simular</button> <br> <br> <!--Botão que executa a função mostrar do js--> 
+    <button onclick="mostrar()">Simular</button> <br> <br> <!--Botão que executa a função mostrar do js-->
     <div id="divTxt"></div> <!--div que receberá o texto do JS-->
 
 
 </body>
+
 </html>
 <script>
     // Variáveis de perda sem o uso da solução
@@ -40,7 +43,7 @@
     var rendeAno = 0;
 
     // Função do calculo do desperdicio sem a solução
-    function calcularDesp(){
+    function calcularDesp() {
 
         // Calculo da perca = 27% ao mes
         garrafasPerdidasMes = Number(iptGarrafas.value) * 0.27
@@ -51,26 +54,26 @@
     }
 
     // função do calculo do desperdicio com a solução
-    function calcularEco(){
+    function calcularEco() {
         // Calculo da eco = 5% ao mes
         garrafasEcoMes = Number(iptGarrafas.value) * 0.17
         valorEcoMes = garrafasEcoMes * Number(iptPreco.value)
 
         // Calculo de eco semestre
         valorEcoSem = garrafasEcoMes * 6 * Number(iptPreco.value)
-       
+
         // Calculo do lucro utilizando nossa solução
         ecoTotalAno = valorPerdidoSem * 2 - valorEcoSem * 2;
         ecoTotalSem = valorPerdidoSem - valorEcoSem;
-   }
+    }
 
-   // função do calculo do rendimento anual do selic
-    function calcularSelic(){
+    // função do calculo do rendimento anual do selic
+    function calcularSelic() {
         selic = 13.25;
         rendeAno = ecoTotalAno * (1 + (selic / 100));
     }
 
-   
+
     // Função que  mostra os dados calculados pelas outras funções
     function mostrar() {
         // Calcula o desperdicio via função
@@ -95,7 +98,7 @@
 🔸 No semestre: R$ ${ecoTotalSem}<br>
 🔸 No ano: R$ ${ecoTotalAno}<br>
 🔸 Rendimento aplicando a economia mensal na SELIC de 13,25% ao ano: R$ ${rendeAno}</b>`
-        
+
     }
 
 </script>
