@@ -1,6 +1,6 @@
-# Calculadora Financeira - LEFHEL
+# Calculadora Financeira - LOFHEL
 
-Este repositório contém a **calculadora financeira interativa** do projeto **LEFHEL**, Descubra quanto da sua produção pode ser preservado com o monitoramento eficaz de temperatura e umidade da Lofhel.
+Este repositório contém a **calculadora financeira interativa** do projeto **LOFHEL**, Descubra quanto da sua produção pode ser preservado com o monitoramento eficaz de temperatura e umidade da Lofhel.
 Insira seus dados e veja o impacto da solução na redução de perdas e na qualidade dos seus vinhos.
 
 ## 🎯 Funcionalidades  
